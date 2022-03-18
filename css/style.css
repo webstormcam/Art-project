@@ -1,3 +1,28 @@
 *{
     box-sizing: border-box;
 }
+
+#all_elements{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto;
+   
+}
+
+header{
+display: flex;
+flex-direction: row;
+font-family: 'Staatliches', cursive;
+padding: 1.5rem 2rem;
+align-items: center;
+justify-content: space-between;
+
+}
+
+h1{
+    font-size: 1.6rem;
+}
+
+.yellow{
+    color: #ffcd11;
+}
