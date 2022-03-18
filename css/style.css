@@ -5,7 +5,7 @@
 #all_elements{
     display: grid;
     grid-template-columns: 1fr ;
-    grid-template-rows: auto;
+    grid-template-rows: auto auto;
    
 }
 
@@ -20,9 +20,53 @@ justify-content: space-between;
 }
 
 h1{
-    font-size: 1.6rem;
+    font-size: 2rem;
+}
+
+.ham{
+    width: 30px;
 }
 
 .yellow{
     color: #ffcd11;
+}
+
+main{
+    display: grid;
+}
+
+.header_words{
+    display: none;
+}
+
+
+@media screen and (min-width:768px) {
+    .header_words{
+        display: block;
+    }
+    .ham_holder{
+        display: none;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        width: 120px;
+        justify-content: space-between;
+    }
+
+    li{
+        font-size: 1.4rem;
+        cursor: pointer;
+    }
+
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    li:hover{
+        cursor: pointer;
+        color: #ffcd11;
+    }
 }
