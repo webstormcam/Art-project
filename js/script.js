@@ -18,8 +18,6 @@ ham.addEventListener('click',function(){
 bigX.addEventListener('click',function(){
  if(bigX.getAttribute('src')==='imgs/icons/icon-close.svg'){
         drop.style.display='flex'
-        drop.classList.add('animate__fadeOut')
-        drop.classList.remove('animate__slideInRight')
         head.style.display='flex'
         main.style.display='grid'
         drop.style.display ='none'
