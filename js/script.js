@@ -5,24 +5,23 @@ let head = document.getElementById('head')
 let bigX = document.getElementById('bigX')
 
 ham.addEventListener('click',function(){
-    if(ham.getAttribute('src') ==='imgs/icons/icon-close.svg'){
-        ham.src = 'imgs/icons/icon-hamburger.svg'
-        drop.classList.remove('animate__slideInRight')
-        drop.classList.add('animate__fadeOut')
-        main.style.display='grid'
-        head.style.display='flex'
-       drop.style.display ='none' 
-        
-     
-    } else{
-        bigX.src = 'imgs/icons/icon-close.svg'
-        drop.style.display='flex'
+    if(ham.getAttribute('src') ==='imgs/icons/icon-hamburger.svg'){
         drop.classList.add('animate__slideInRight')
         drop.classList.remove('animate__fadeOut')
-        head.style.display='none'
         main.style.display='none'
+        head.style.display='none'
+       drop.style.display ='flex' 
         
-    
-        
-    }
+     
+    } 
     });
+bigX.addEventListener('click',function(){
+ if(bigX.getAttribute('src')==='imgs/icons/icon-close.svg'){
+        drop.style.display='flex'
+        drop.classList.add('animate__fadeOut')
+        drop.classList.remove('animate__slideInRight')
+        head.style.display='flex'
+        main.style.display='grid'
+        drop.style.display ='none'
+}
+});
