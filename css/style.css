@@ -36,6 +36,17 @@ h1{
     cursor: pointer;
 }
 
+#bigX{
+    width: 30px;
+    cursor: pointer;
+}
+
+.title_X{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .yellow{
     color: #ffcd11;
 }
