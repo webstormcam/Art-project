@@ -74,6 +74,20 @@ main{
     .ham_holder{
         display: none;
     }
+
+
+
+    header{
+        display: flex  !important;
+    }
+
+    main{
+        display: grid  !important;
+    }
+
+    #all_elements{
+        display: grid !important;
+    }
     ul{
         display: flex;
         flex-direction: row;
@@ -103,7 +117,7 @@ main{
       
     }
     #dropdown{
-        display: none;
+        display: none !important;
        
     }
 }
