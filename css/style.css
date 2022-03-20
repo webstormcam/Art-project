@@ -61,10 +61,12 @@ main{
 }
 #dropdown{
     display: none;
-  
+    font-family: 'Staatliches', cursive;
+    padding: 1.5rem 2rem;
     background-color: orange;
     width: 100%;
     height: 850px;
+    flex-direction: column;
 }
 
 @media screen and (min-width:768px) {
