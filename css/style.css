@@ -98,6 +98,10 @@ main{
     color: #ffcd11;
 }
 
+.gallery__item{
+    cursor: pointer;
+}
+
 .modal {
     display: none;
     /* Hidden by default */
@@ -125,7 +129,7 @@ main{
   .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
+    width: 60%;
     max-width: 700px;
   }
   
