@@ -8,7 +8,6 @@ ham.addEventListener('click',function(){
     if(ham.getAttribute('src') ==='imgs/icons/icon-hamburger.svg'){
         drop.classList.add('animate__slideInRight')
         drop.classList.remove('animate__fadeOut')
-        main.style.display='none'
         head.style.display='none'
        drop.style.display ='flex' 
        console.log('hello')
@@ -20,7 +19,7 @@ bigX.addEventListener('click',function(){
  if(bigX.getAttribute('src')==='imgs/icons/icon-close.svg'){
         drop.style.display='flex'
         head.style.display='flex'
-        main.style.display='grid'
+        
         drop.style.display ='none'
 }
 });
@@ -43,10 +42,4 @@ for (var i = 0; i < images.length; i++) {
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
   }
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-span.onclick = function() {
-  modal.style.display = "none";
 }

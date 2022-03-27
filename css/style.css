@@ -184,6 +184,11 @@ main{
         display: none;
     }
 
+    #about_info{
+        grid-template-columns: 1fr;
+        grid-template-rows:auto;
+    }
+
 
 
     header{
@@ -241,6 +246,10 @@ main{
        grid-template-rows: repeat(8,8vw);
       
        
+    }
+
+    #about_info{
+        grid-template-columns: 1fr
     }
    
     .gallery__item--1 {
